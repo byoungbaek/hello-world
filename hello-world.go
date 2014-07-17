@@ -1,7 +1,7 @@
-﻿package main
+package main
 
 import "fmt"
-import "github.com/byoungbaek/my-error"	// package path for package my_error
+import "github.com/byoungbaek/my-error" // package path for package my_error
 
 func main() {
 	//var x float64
@@ -31,7 +31,7 @@ func calc(a int) (float64, error) {
 	a0 = 10
 	b := 2.4
 	c := 0.0
-	c = float64(int(a0) + a)+b
+	c = float64(int(a0)+a) + b
 	return c, nil
 }
 
