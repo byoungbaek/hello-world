@@ -1,22 +1,11 @@
 ﻿package main
 
 import "fmt"
-//import "errors"
+import "myError"
 
 // My error handling -------------------------------------------------------
 
-type myError struct {
-	code int32
-	s string
-}
 
-func (e *myError) Error() string {
-	return fmt.Sprintf("[%d] %s", e.code, e.s)
-}
-
-func myNewError(code int32, text string) error {
-    return &myError{code, text}
-}
 
 //--------------------------------------------------------------------------------
 
